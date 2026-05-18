@@ -16,7 +16,7 @@ export default function SentimentBox() {
     setResult("");
 
     try {
-      const response = await fetch("https://sentiment-ai-backend.onrender.com", {
+      const response = await fetch("https://sentiment-ai-backend.onrender.com/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
